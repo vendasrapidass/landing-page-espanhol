@@ -76,9 +76,8 @@ export function Pricing() {
             <div className="space-y-4 text-left px-1">
               {[
                 "45+ Páginas de dibujos exclusivos de Bobbie Cup",
-                "Formato PDF de alta resolución listo para imprimir",
                 "Temática especial de la Copa para máxima diversión",
-                "Acceso vitalicio y actualizaciones gratuitas",
+                "Tu colección siempre al día con lanzamientos y sorpresas exclusivas",
                 "Garantía total de satisfacción por 7 días",
               ].map((text, i) => (
                 <div key={i} className="flex items-start gap-3">
