@@ -14,9 +14,9 @@ const _poppins = Poppins({
 export const metadata: Metadata = {
   title: '45+ Dibujos para Colorear Bobbie Cup | Libros para Toda la Familia',
   description:
-    'Adquiere ahora 45+ dibujos para colorear Bobbie Cup con temáticas variadas de la copa. Acceso de por vida, soporte por WhatsApp y garantía de 7 días.',
+    'Adquiere ahora 45+ dibujos para colorear Bobbie Cup con temáticas variadas de la copa. Acceso de por vida, suporte por WhatsApp y garantía de 7 días.',
   
-  // --- INÍCIO DAS TAGS OPEN GRAPH (EXIGIDAS PELO SUPORTE DA META) ---
+  // --- INÍCIO DAS TAGS OPEN GRAPH ---
   openGraph: {
     title: '45+ Dibujos para Colorear Bobbie Cup',
     description: 'Adquiere ahora 45+ dibujos para colorear Bobbie Cup con temáticas variadas de la copa. Acceso de por vida y garantía de 7 días.',
@@ -44,30 +44,17 @@ export default function RootLayout({
       <body className="font-sans antialiased">
         {children}
 
-        {/* CÓDIGO DO PIXEL DA META */}
-        <Script id="meta-pixel" strategy="afterInteractive">
+        {/* CONFIGURAÇÃO UTMFY - RASTREIO ATUALIZADO */}
+        <Script id="utmify-pixel" strategy="afterInteractive">
           {`
-            !function(f,b,e,v,n,t,s)
-            {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-            n.queue=[];t=b.createElement(e);t.async=!0;
-            t.src=v;s=b.getElementsByTagName(e)[0];
-            s.parentNode.insertBefore(t,s)}(window, document,'script',
-            'https://connect.facebook.net/en_US/fbevents.js');
-            fbq('init', '608663365673618');
-            fbq('track', 'PageView');
+            window.pixelId = "6a0274459d325b28a4dac28d";
+            var a = document.createElement("script");
+            a.setAttribute("async", "");
+            a.setAttribute("defer", "");
+            a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+            document.head.appendChild(a);
           `}
         </Script>
-        <noscript>
-          <img 
-            height="1" 
-            width="1" 
-            style={{ display: 'none' }}
-            src="https://www.facebook.com/tr?id=608663365673618&ev=PageView&noscript=1"
-            alt=""
-          />
-        </noscript>
       </body>
     </html>
   )
