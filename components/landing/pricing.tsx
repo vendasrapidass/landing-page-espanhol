@@ -89,9 +89,9 @@ export function Pricing() {
               ))}
             </div>
 
-            {/* Purchase Button */}
+            {/* Purchase Button - LINK ATUALIZADO ABAIXO */}
             <a
-              href="https://pay.hotmart.com/V105722951L"
+              href="https://pay.hotmart.com/V105722951L?checkoutMode=10"
               target="_blank"
               rel="noopener noreferrer"
               className="animate-pulse-scale mt-10 block w-full rounded-full bg-[#22c55e] py-5 text-center text-lg font-black text-[#ffffff] shadow-xl transition-all hover:bg-[#16a34a] hover:shadow-2xl"
